@@ -23,7 +23,7 @@ export class Quiz {
 
     // Mostrar por cuál pregunta va el usuario
     getPreguntasIndex() {
-        return this.questions[this.preguntaIndex]
+        return this.questions[this.preguntaIndex];
     }
 
     // Finaliza la cantidad de preguntas

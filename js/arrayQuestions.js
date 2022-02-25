@@ -8,8 +8,7 @@ export const arrayPreguntas = [
             "Quentin Tarantino",
             "Steven Spielberg"
         ],
-        respuesta: "James Cameron",
-        imagen: "AVATAR"
+        respuesta: "James Cameron"
     },
     {
         categoria: "Música",
@@ -20,8 +19,7 @@ export const arrayPreguntas = [
             "Ckay",
             "Drake"
         ],
-        respuesta: "Ckay",
-        imagen: "Ckay"
+        respuesta: "Ckay"
     },
     {
         categoria: "Juegos",
@@ -32,8 +30,7 @@ export const arrayPreguntas = [
             "God of War",
             "Fallout"
         ],
-        respuesta: "Halo",
-        imagen: "Halo"
+        respuesta: "Halo"
     },
     {
         categoria: "TV",
@@ -44,8 +41,7 @@ export const arrayPreguntas = [
             "Richard Burke",
             "Ross Geller"
         ],
-        respuesta: "Ross Geller",
-        imagen: ""
+        respuesta: "Ross Geller"
     },
     {
         categoria: "Geografía",
@@ -56,8 +52,7 @@ export const arrayPreguntas = [
             "Bélgica",
             "Rumania"
         ],
-        respuesta: "Francia",
-        imagen: "Francia"
+        respuesta: "Francia"
     },
     {
         categoria: "Cine",
@@ -68,8 +63,7 @@ export const arrayPreguntas = [
             "Mark Ruffalo",
             "Ben Affleck"
         ],
-        respuesta: "Ben Affleck",
-        imagen: "Ben Affleck"
+        respuesta: "Ben Affleck"
     },
     {
         categoria: "Música",
@@ -80,8 +74,7 @@ export const arrayPreguntas = [
             "verdad",
             "realidad"
         ],
-        respuesta: "señal",
-        imagen: "Rata Blanca"
+        respuesta: "señal"
     },
     {
         categoria: "Juegos",
@@ -92,8 +85,7 @@ export const arrayPreguntas = [
             "Marcus Fénix",
             "Dante"
         ],
-        respuesta: "Marcus Fénix",
-        imagen: "Marcus Fénix"
+        respuesta: "Marcus Fénix"
     },
     {
         categoria: "TV",
@@ -104,8 +96,7 @@ export const arrayPreguntas = [
             "Pachu",
             "Rebo 4"
         ],
-        respuesta: "Pepe",
-        imagen: "Pepe"
+        respuesta: "Pepe"
     },
     {
         categoria: "Geografía",
@@ -116,8 +107,7 @@ export const arrayPreguntas = [
             "Nápoles",
             "Roma"
         ],
-        respuesta: "Roma",
-        imagen: ""
+        respuesta: "Roma"
     },
     {
         categoria: "Cine",
@@ -128,8 +118,7 @@ export const arrayPreguntas = [
             "Jared Leto",
             "Jack Nicholson"
         ],
-        respuesta: "Joaquin Phoenix",
-        imagen: ""
+        respuesta: "Joaquin Phoenix"
     },
     {
         categoria: "Música",
@@ -140,11 +129,10 @@ export const arrayPreguntas = [
             "Nicky Romero",
             "Meduza"
         ],
-        respuesta: "David Guetta",
-        imagen: ""
+        respuesta: "David Guetta"
     },
     {
-        categoria: "Juegos",
+        categoria: "Deportes",
         pregunta: "¿Quién es conocido por su apodo 'El Bicho'?",
         opciones: [
             "Cristiano Ronaldo",
@@ -152,8 +140,7 @@ export const arrayPreguntas = [
             "Lucas Pratto",
             "Ángel Di María"
         ],
-        respuesta: "Cristiano Ronaldo",
-        imagen: ""
+        respuesta: "Cristiano Ronaldo"
     },
     {
         categoria: "TV",
@@ -164,8 +151,7 @@ export const arrayPreguntas = [
             "American Dad",
             "The Simpsons"
         ],
-        respuesta: "The Simpsons",
-        imagen: ""
+        respuesta: "The Simpsons"
     },
     {
         categoria: "Geografía",
@@ -176,8 +162,7 @@ export const arrayPreguntas = [
             "Irlanda",
             "Ninguna es correcta"
         ],
-        respuesta: "Ninguna es correcta",
-        imagen: ""
+        respuesta: "Ninguna es correcta"
     }
 ]
 

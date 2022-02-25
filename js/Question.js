@@ -3,13 +3,15 @@ export class Pregunta {
     // JSDoc, comentario múltiple
     /**
      * 
+     * @param {string} categoria esto es la categoria
      * @param {string} pregunta esto es la pregunta
      * @param {string[]} opciones estas son las opciones
      * @param {string} respuesta esta es la respuesta
      */
 
     // Usamos un constructor para repetir una estructura
-    constructor(question, opciones, respuesta){
+    constructor(categorie, question, opciones, respuesta){
+        this.categorie = categorie;
         this.question = question;
         this.opciones = opciones;
         this.respuesta = respuesta;

@@ -1,5 +1,10 @@
 export class Interaction {
 
+    showCategoria(categorie) {
+        const categoriaTitulo = document.getElementById("categoria")
+        categoriaTitulo.innerHTML = categorie;
+    }
+
     /**
      * 
      * @param {string} question esta es la pregunta
@@ -45,14 +50,14 @@ export class Interaction {
 
         if (puntos >= 12) {
             fondo.style = "background-color: white"
-            finQuiz = `<h1>¡Bien Hecho 😎!</h1>
-                       <h2>${puntos} puntos</h2>
+            finQuiz = `<p>¡Bien Hecho 😎!</p>
+                       <p>${puntos} puntos</p>
                        <button class='reintentarBtn' onclick='location.reload()'>Reintentar</button>
                        `;
         } else {
             fondo.style = "background-color: white"
-            finQuiz = `<h1>¡Inténtalo Otra Vez 😜!</h1>
-                       <h2>${puntos} puntos</h2>
+            finQuiz = `<h1>¡Inténtalo Otra Vez 😜!</p>
+                       <p>${puntos} puntos</p>
                        <button class='reintentarBtn' onclick='location.reload()'>Reintentar</button>
                        `;
         }
