@@ -1,0 +1,5 @@
+.Personaje principal: usuario
+.Objetivo: responder 6 preguntas correctas para ganar
+.Obstaculos: responder mal
+.Pantalla de carga: un signo de ? girando
+.Recompensas: 1 punto por cada respuesta correcta
