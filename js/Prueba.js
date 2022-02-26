@@ -1,15 +1,15 @@
-import {Pregunta} from './Question.js';
+import {Pregunta} from './Pregunta.js';
 
-export class Quiz {
+export class Prueba {
 
     /**
      * 
-     * @param {Pregunta[]} questions 
+     * @param {Pregunta[]} preguntas 
      */
     
     // opciones de respuesta
-    constructor(questions){
-        this.questions = questions;
+    constructor(preguntas){
+        this.preguntas = preguntas;
     }
 
 
@@ -22,25 +22,25 @@ export class Quiz {
      */
 
     // Mostrar por cuál pregunta va el usuario
-    getPreguntasIndex() {
-        return this.questions[this.preguntaIndex];
+    preguntasIndex() {
+        return this.preguntas[this.preguntaIndex];
     }
 
     // Finaliza la cantidad de preguntas
-    isFinished() {
-        return this.questions.length === this.preguntaIndex;
+    finalizado() {
+        return this.preguntas.length === this.preguntaIndex;
     }
 
     /**
      * 
-     * @param {string} answer la respuesta
+     * @param {string} respuesta la respuesta
      */
 
     // Si el usuario adivina, aumenta de puntos y pasa a la otra pregunta
-    guess(answer) {
+    adivinar(respuesta) {
         let fondo = document.getElementById("quiz")
 
-        if (this.getPreguntasIndex().correct(answer)) {
+        if (this.preguntasIndex().correcta(respuesta)) {
             this.puntos++
             fondo.style = "background-color: lightgreen"
             console.log("Correcto")

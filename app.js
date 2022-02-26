@@ -1,13 +1,13 @@
-import {questions} from './js/questions.js';
-import {Quiz} from './js/Quiz.js';
-import {Interaction} from './js/Interaction.js';
+import {preguntas} from './js/preguntas.js';
+import {Prueba} from './js/Prueba.js';
+import {Interaccion} from './js/Interaccion.js';
 
 function modal() {
     Swal.fire({
         position: "center",
         heightAuto: false,
         title: 'Reglas!',
-        html: '<p>Debes responder correctamente 12 o más preguntas</p> <p>Fondo 🟢 = correcto</p> <p>Fondo 🔴 = incorrecto</p> <p class="text">Mucha suerte !</p>',
+        html: '<div class="modal"><p>Debes responder correctamente 14 o más preguntas</p> <p>Fondo 🟢 = correcto</p> <p>Fondo 🔴 = incorrecto</p> <p class="text">Mucha suerte !</p> </div>',
         icon: 'info',
         confirmButtonText: 'OK'
     })
@@ -16,29 +16,30 @@ modal();
 
 /**
  * 
- * @param {Quiz} quiz el principal objeto
- * @param {Interaction} interaction objeto interactivo 
+ * @param {Prueba} prueba el principal objeto
+ * @param {Interaccion} interaccion objeto interactivo 
  */
 
-const renderPage = (quiz, interaction) => {
-    if (quiz.isFinished()) {
-        interaction.showPuntos(quiz.puntos);
+const hacerPagina = (prueba, interaccion) => {
+    if (prueba.finalizado()) {
+        interaccion.mostrarPuntos(prueba.puntos);
     } else {
-        interaction.showCategoria(quiz.getPreguntasIndex().categorie);
-        interaction.showPregunta(quiz.getPreguntasIndex().question);
-        interaction.showOpciones(quiz.getPreguntasIndex().opciones, (currentChoice) => {
-            quiz.guess(currentChoice);
-            renderPage(quiz, interaction);
+        interaccion.mostrarCategoria(prueba.preguntasIndex().categoria);
+        interaccion.mostrarPregunta(prueba.preguntasIndex().pregunta);
+        interaccion.mostrarImagen(prueba.preguntasIndex().imagen);
+        interaccion.mostrarOpciones(prueba.preguntasIndex().opciones, (actualEleccion) => {
+            prueba.adivinar(actualEleccion);
+            hacerPagina(prueba, interaccion);
         });
-        interaction.showProgreso(quiz.preguntaIndex, quiz.questions.length)
+        interaccion.mostrarProgreso(prueba.preguntaIndex, prueba.preguntas.length)
     }
 }
 
 function principal() {
-    const quiz = new Quiz(questions)
-    const interaction = new Interaction();
+    const prueba = new Prueba(preguntas)
+    const interaccion = new Interaccion();
 
-    renderPage(quiz, interaction)    
+    hacerPagina(prueba, interaccion)    
 }
 
 principal();

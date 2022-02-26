@@ -1,3 +1,4 @@
+
 export const arrayPreguntas = [
     {
         categoria: "Cine",
@@ -8,29 +9,32 @@ export const arrayPreguntas = [
             "Quentin Tarantino",
             "Steven Spielberg"
         ],
-        respuesta: "James Cameron"
+        respuesta: "James Cameron",
+        imagen: "avatar.png"
     },
     {
         categoria: "Música",
-        pregunta: "¿Quién compuso 'love nwantiti'?",
+        pregunta: "¿Quién compuso la canción 'Old Town Road'?",
         opciones: [
-            "Lil Nas X",
+            "Lil Nas X ft. Billy Ray Cyrus",
             "Travis Scott",
             "Ckay",
             "Drake"
         ],
-        respuesta: "Ckay"
+        respuesta: "Lil Nas X ft. Billy Ray Cyrus",
+        imagen: "lilNasX.png"
     },
     {
-        categoria: "Juegos",
-        pregunta: "¿Cómo se llama el juego cuyo personaje principal se llama Master Chieff?",
+        categoria: "Mates",
+        pregunta: "¿9 x 9?",
         opciones: [
-            "Halo",
-            "Gears of War",
-            "God of War",
-            "Fallout"
+            "81",
+            "73",
+            "18",
+            "99"
         ],
-        respuesta: "Halo"
+        respuesta: "81",
+        imagen: ""
     },
     {
         categoria: "TV",
@@ -41,18 +45,20 @@ export const arrayPreguntas = [
             "Richard Burke",
             "Ross Geller"
         ],
-        respuesta: "Ross Geller"
+        respuesta: "Ross Geller",
+        imagen: "rachel.png"
     },
     {
         categoria: "Geografía",
-        pregunta: "¿Cuál bandera tiene colores azul, blanco y rojo?",
+        pregunta: "¿Cuál bandera es esta?",
         opciones: [
             "Francia",
             "Andorra",
             "Bélgica",
             "Rumania"
         ],
-        respuesta: "Francia"
+        respuesta: "Francia",
+        imagen: "francia.png"
     },
     {
         categoria: "Cine",
@@ -63,7 +69,8 @@ export const arrayPreguntas = [
             "Mark Ruffalo",
             "Ben Affleck"
         ],
-        respuesta: "Ben Affleck"
+        respuesta: "Ben Affleck",
+        imagen: "batman.png"
     },
     {
         categoria: "Música",
@@ -74,18 +81,20 @@ export const arrayPreguntas = [
             "verdad",
             "realidad"
         ],
-        respuesta: "señal"
+        respuesta: "señal",
+        imagen: ""
     },
     {
-        categoria: "Juegos",
-        pregunta: "¿Qué personaje forma parte de la saga de videojuegos Gears of War?",
+        categoria: "Mates",
+        pregunta: "¿3 x 3 + 1?",
         opciones: [
-            "Kratos",
-            "Master Chieff",
-            "Marcus Fénix",
-            "Dante"
+            "7",
+            "9",
+            "10",
+            "12"
         ],
-        respuesta: "Marcus Fénix"
+        respuesta: "10",
+        imagen: ""
     },
     {
         categoria: "TV",
@@ -96,7 +105,8 @@ export const arrayPreguntas = [
             "Pachu",
             "Rebo 4"
         ],
-        respuesta: "Pepe"
+        respuesta: "Pepe",
+        imagen: ""
     },
     {
         categoria: "Geografía",
@@ -107,7 +117,8 @@ export const arrayPreguntas = [
             "Nápoles",
             "Roma"
         ],
-        respuesta: "Roma"
+        respuesta: "Roma",
+        imagen: ""
     },
     {
         categoria: "Cine",
@@ -118,7 +129,8 @@ export const arrayPreguntas = [
             "Jared Leto",
             "Jack Nicholson"
         ],
-        respuesta: "Joaquin Phoenix"
+        respuesta: "Joaquin Phoenix",
+        imagen: "joker.png"
     },
     {
         categoria: "Música",
@@ -129,7 +141,8 @@ export const arrayPreguntas = [
             "Nicky Romero",
             "Meduza"
         ],
-        respuesta: "David Guetta"
+        respuesta: "David Guetta",
+        imagen: ""
     },
     {
         categoria: "Deportes",
@@ -140,7 +153,8 @@ export const arrayPreguntas = [
             "Lucas Pratto",
             "Ángel Di María"
         ],
-        respuesta: "Cristiano Ronaldo"
+        respuesta: "Cristiano Ronaldo",
+        imagen: ""
     },
     {
         categoria: "TV",
@@ -151,7 +165,8 @@ export const arrayPreguntas = [
             "American Dad",
             "The Simpsons"
         ],
-        respuesta: "The Simpsons"
+        respuesta: "The Simpsons",
+        imagen: ""
     },
     {
         categoria: "Geografía",
@@ -162,7 +177,68 @@ export const arrayPreguntas = [
             "Irlanda",
             "Ninguna es correcta"
         ],
-        respuesta: "Ninguna es correcta"
+        respuesta: "Ninguna es correcta",
+        imagen: ""
+    },
+    {
+        categoria: "Deportes",
+        pregunta: "¿Cuál pelota es más grande?",
+        opciones: [
+            "Pelota de tenis",
+            "Pelota de golf",
+            "Pelota de handball",
+            "Pelota de baseball"
+        ],
+        respuesta: "Pelota de handball",
+        imagen: ""
+    },
+    {
+        categoria: "Música",
+        pregunta: "¿Cuál cantante no es argentino?",
+        opciones: [
+            "Luciano Pereyra",
+            "David Bisbal",
+            "Palito Ortega",
+            "Leo Mattioli"
+        ],
+        respuesta: "David Bisbal",
+        imagen: ""
+    },
+    {
+        categoria: "Mates",
+        pregunta: "¿238 x 2 + 4?",
+        opciones: [
+            "466",
+            "476",
+            "462",
+            "480"
+        ],
+        respuesta: "480",
+        imagen: ""
+    },
+    {
+        categoria: "Cine",
+        pregunta: "¿Cuál de estas películas está basada en la 2da Guerra Mundial?",
+        opciones: [
+            "La Vitta è Bella",
+            "Corazones de Hierro",
+            "Rescatando al soldado Ryan",
+            "Todas son correctas"
+        ],
+        respuesta: "Todas son correctas",
+        imagen: ""
+    },
+    {
+        categoria: "Geografía",
+        pregunta: "¿Cuántas provincias posee Argentina?",
+        opciones: [
+            "24",
+            "20",
+            "23",
+            "26"
+        ],
+        respuesta: "23",
+        imagen: ""
     }
 ]
 
